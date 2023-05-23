@@ -3,13 +3,14 @@
 // Product Controller
 
 //development APIs
-const displayProductAPI = 'http://localhost:8080/eScriptCoder/allProduct';
-const findProductAPI = 'http://localhost:8080/eScriptCoder/';
+//const displayProductAPI = 'http://localhost:8080/eScriptCoder/allProduct';
+//const findProductAPI = 'http://localhost:8080/eScriptCoder/';
 
 //production APIs
 
-//const displayProductAPI = 'XXX/eScriptCoder/allProduct';
-//const findProductAPI = 'XXX/eScriptCoder/';
+const displayProductAPI = 'https://soohuaecommerce.azurewebsites.net/eScriptCoder/allProduct';
+const findProductAPI = 'https://soohuaecommerce.azurewebsites.net/eScriptCoder/';
+
 //const addAPI = 'https://fsdwebdemospring.azurewebsites.net/item/add';
 
 

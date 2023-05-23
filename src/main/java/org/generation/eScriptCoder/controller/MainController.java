@@ -58,6 +58,7 @@ public class MainController {
     {
 
         //To display images from local folder
+        /*
         for (Product product: productService.all())
         {
 
@@ -65,14 +66,14 @@ public class MainController {
             String setURL = imageFolder + "/" + product.getProduct_url();
             product.setProduct_url(setURL);
         }
-
+*/
 
 
         /* To display images from the Server Container */
 
-        /*
+
         //Have to change this string
-        String connectStr2 = "DefaultEndpointsProtocol=https;AccountName=soohuaproductimages;AccountKey=l1Da2TH0WCT2FDhW5fM0OSSAMl6nsfK09UdWVO8PksHFTBP8wpZxjDxF/7zBcBA68pD2gEUw8NbT+AStgxKDfA==;EndpointSuffix=core.windows.net";
+        String connectStr2 = "DefaultEndpointsProtocol=https;AccountName=soohuaecommerceprodimg;AccountKey=J9EkANIrtw1TzPxw7d2gndej60ZkThdy4201Mx4Zcw7nR+vvLBBciQ7jyrYBNtwRRl0TzJeIzzYH+AStZdxRCw==;EndpointSuffix=core.windows.net";
         //System.out.println("Connect String: " + connectStr2);
         BlobServiceClient blobServiceClient = new BlobServiceClientBuilder().connectionString(connectStr2).buildClient();
         String containerName = "prodimage";
@@ -93,7 +94,7 @@ public class MainController {
 
         }
 
-       */
+
 
         //return in the controller represent a response to the client
         return this.productService.all();

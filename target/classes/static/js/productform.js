@@ -3,10 +3,10 @@
 
 
 //Development APIs
-const addAPI = 'http://localhost:8080/eScriptCoder/add';
+//const addAPI = 'http://localhost:8080/eScriptCoder/add';
 
 //production APIs
-//const addAPI = 'XXX/eScriptCoder/add';
+const addAPI = 'https://soohuaecommerce.azurewebsites.net/eScriptCoder/add';
 //const addAPI = 'https://fsdwebdemospring.azurewebsites.net/item/add';
 
 

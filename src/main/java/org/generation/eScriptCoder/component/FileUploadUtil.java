@@ -22,6 +22,7 @@ public class FileUploadUtil {
                                 MultipartFile multipartFile) throws IOException
     {
 //        local storage
+        /*
         Path uploadPath1 = Paths.get(uploadDir1);
         try (InputStream inputStream = multipartFile.getInputStream()) {
 
@@ -32,14 +33,14 @@ public class FileUploadUtil {
         } catch (IOException ioe) {
             throw new IOException("Could not save image file: " + fileName, ioe);
         }
-
+*/
 
         //Actual upload of images to Azure. Will work in local but need to pay.
         /* This is the setup using Azure storage */
 
-        /*
+
         //Change this string
-        String connectStr2 = "DefaultEndpointsProtocol=https;AccountName=soohuaproductimages;AccountKey=l1Da2TH0WCT2FDhW5fM0OSSAMl6nsfK09UdWVO8PksHFTBP8wpZxjDxF/7zBcBA68pD2gEUw8NbT+AStgxKDfA==;EndpointSuffix=core.windows.net";
+        String connectStr2 = "DefaultEndpointsProtocol=https;AccountName=soohuaecommerceprodimg;AccountKey=J9EkANIrtw1TzPxw7d2gndej60ZkThdy4201Mx4Zcw7nR+vvLBBciQ7jyrYBNtwRRl0TzJeIzzYH+AStZdxRCw==;EndpointSuffix=core.windows.net";
 
         //create a connection between application and storage container that we have created in our Azure server
         BlobServiceClient blobServiceClient = new BlobServiceClientBuilder().connectionString(connectStr2).buildClient();
@@ -56,7 +57,7 @@ public class FileUploadUtil {
 
         InputStream inputStream = multipartFile.getInputStream();
         blobClient.upload(inputStream);
-        */
+
 
 
 
