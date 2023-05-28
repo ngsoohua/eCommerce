@@ -22,7 +22,7 @@ public class FileUploadUtil {
                                 MultipartFile multipartFile) throws IOException
     {
 //        local storage
-        /*
+/*
         Path uploadPath1 = Paths.get(uploadDir1);
         try (InputStream inputStream = multipartFile.getInputStream()) {
 

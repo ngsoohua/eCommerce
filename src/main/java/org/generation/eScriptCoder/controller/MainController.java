@@ -58,7 +58,7 @@ public class MainController {
     {
 
         //To display images from local folder
-        /*
+/*
         for (Product product: productService.all())
         {
 
