@@ -237,7 +237,6 @@ const replaceWithIDFromGlobalCatList = (result) =>{
         });
     });
 
-
 }
 
 const navigateToProductPage = () =>{
@@ -263,9 +262,12 @@ const setQuery = () =>{
             
 //            console.log(result);
             replaceWithIDFromGlobalCatList(result);
-//            console.log(result);
+            console.log(result);
 
-            let resultStr = JSON.stringify(result);
+            const uniqueResult = Array.from(new Set(result));
+            console.log("uniqueResult : " + uniqueResult);
+
+            let resultStr = JSON.stringify(uniqueResult);
             setCategory('searchStringArray', resultStr);
             navigateToProductPage();
 
